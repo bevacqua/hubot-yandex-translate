@@ -31,8 +31,7 @@ function yandexTranslate (robot) {
       lang: lang,
       text: input
     };
-console.log(lang);
-console.log(input);
+
     command
       .http('https://translate.yandex.net/api/v1.5/tr.json/translate')
       .query(q)
