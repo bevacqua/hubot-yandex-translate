@@ -28,6 +28,15 @@ Get [a Yandex API key][1]. Add it to your environment.
 heroku config:add YANDEX_TRANSLATE_API_KEY=$KEY
 ```
 
+# Command
+
+- `hubot translate <message>`
+- `hubot traducir <message>`
+- `hubot traduce <message>`
+- `hubot tr <message>`
+- `hubot t <message>`
+- `hubot translate [from-to] <message>`
+
 # License
 
 MIT
