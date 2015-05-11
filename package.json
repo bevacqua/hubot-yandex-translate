@@ -1,0 +1,19 @@
+{
+  "name": "hubot-yandex-translate",
+  "version": "1.0.0",
+  "description": "Allows Hubot to translate things using the Yandex Translation API",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bevacqua/hubot-yandex-translate.git"
+  },
+  "author": "Nicolas Bevacqua <nicolasbevacqua@gmail.com> (http://bevacqua.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bevacqua/hubot-yandex-translate/issues"
+  },
+  "homepage": "https://github.com/bevacqua/hubot-yandex-translate",
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}
