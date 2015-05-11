@@ -2,7 +2,7 @@
 
 > Allows Hubot to translate things using the Yandex Translation API
 
-See [`src/yandex-translate.coffee`](src/yandex-translate.coffee) for full documentation.
+See [`src/yandex-translate.js`](src/yandex-translate.js) for full documentation.
 
 # Installation
 
