@@ -10,7 +10,7 @@ function getCode (language, basic) {
 function yandexTranslate (robot) {
   var choices = languages.sort().join('|');
   var pattern = '' +
-    '(?: t|tr|tra(?:duc(?:e|ir?)|nslate))' +
+    '(?: traducir|traduc[ie]|translate|tr|t)' +
     '(?: (' + choices + '))?' +
     '(?:[\s-]+(' + choices + '))?' +
     '(.*)';
@@ -21,15 +21,18 @@ function yandexTranslate (robot) {
   function request (command) {
     var input = command.match[3].trim();
     var term = '"' + input + '"';
-    var origin = getCode(command.match[1], 'auto');
-    var target = getCode(command.match[2], 'en');
+    var one = command.match[1];
+    var two = command.match[2];
+    var origin = getCode(two ? one : 'auto', 'auto');
+    var target = getCode(two ? two : one, 'en');
     var lang = origin === 'auto' ? target : origin + '-' + target;
     var q = {
       key: process.env.YANDEX_TRANSLATE_API_KEY,
       lang: lang,
       text: input
     };
-
+console.log(lang);
+console.log(input);
     command
       .http('https://translate.yandex.net/api/v1.5/tr.json/translate')
       .query(q)
