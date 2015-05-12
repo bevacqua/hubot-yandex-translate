@@ -36,6 +36,7 @@ heroku config:add YANDEX_TRANSLATE_API_KEY=$KEY
 - `hubot tr <message>`
 - `hubot t <message>`
 - `hubot translate [from-to] <message>`
+- `hubot translate [to] <message>`
 
 # License
 
